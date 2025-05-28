@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>e206733f-664f-4946-9c45-e3deaf0ed86f</UserSecretsId>
+	<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	<Authors>Forest Holding Financeira</Authors>
+	<Product>API - Forest Holding Financeira</Product>
+	<AssemblyName>FHF.Template.Api</AssemblyName>
+	<Company>Forest Holding Financeira</Company>
+	<Copyright>Forest Holding Financeira</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Asp.Versioning.Mvc" Version="8.1.0" />
+	  <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.4">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="Scrutor" Version="6.0.1" />
+	  <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+	  <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FHF.Template.Domain\FHF.Template.Domain.csproj" />
+    <ProjectReference Include="..\FHF.Template.Service\FHF.Template.Service.csproj" />
+  </ItemGroup>
+
+</Project>
