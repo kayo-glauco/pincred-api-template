@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="ApiServices\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Pincred.Template.Data\Pincred.Template.Data.csproj" />
+    <ProjectReference Include="..\Pincred.Template.Domain\Pincred.Template.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
